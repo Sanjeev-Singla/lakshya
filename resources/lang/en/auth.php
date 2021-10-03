@@ -33,7 +33,7 @@ return [
     'app' => [
         'search' => 'Search',
         'changePassword' => 'Change Password',
-        'online' => 'Oranpo',
+        'online' => 'Lakshya',
     ],
     'sign_out' => 'Sign Out',
 ];

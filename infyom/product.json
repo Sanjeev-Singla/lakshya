@@ -1,0 +1,80 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "title",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": "required|alpha|max:255|min:3",
+        "searchable": true
+    },
+    {
+        "name": "descritpion",
+        "dbType": "text",
+        "htmlType": "textarea",
+        "validations": "nullable|alpha",
+        "searchable": true
+    },
+    {
+        "name": "currency",
+        "dbType": "string,50:default,USD",
+        "htmlType": "select,USD:USD",
+        "validations": "required|max:50",
+        "searchable": true
+    },
+    {
+        "name": "price",
+        "dbType": "integer:unsigned:default,0",
+        "htmlType": "number",
+        "validations": "required|digits_between:1,6",
+        "searchable": true
+    },
+    {
+        "name": "available_units",
+        "dbType": "integer:unsigned:default,0",
+        "htmlType": "number",
+        "validations": "required|digits_between:1,6",
+        "searchable": true
+    },
+    
+    {
+        "name": "is_active",
+        "dbType": "tinyInteger:default,0",
+        "htmlType": "checkbox",
+        "validations": "",
+        "searchable": true,
+        "inForm": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

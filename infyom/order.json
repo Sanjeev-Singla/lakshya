@@ -1,0 +1,59 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "user_id",
+        "dbType": "bigInteger:unsigned",
+        "htmlType": "",
+        "validations": "",
+        "searchable": true,
+        "relation": "mt1,User,user_id,id"
+    },
+    {
+        "name": "product_id",
+        "dbType": "bigInteger:unsigned",
+        "htmlType": "",
+        "validations": "",
+        "searchable": true,
+        "relation": "mt1,Product,product_id,id"
+    },
+    {
+        "name": "status",
+        "dbType": "tinyInteger:unsigned,default:0",
+        "htmlType": "",
+        "validations": "",
+        "searchable": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

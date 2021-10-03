@@ -1,0 +1,72 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "first_name",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": "required|alpha|max:255|min:3",
+        "searchable": true
+    },
+    {
+        "name": "last_name",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": "nullable|alpha|max:255",
+        "searchable": true
+    },
+    {
+        "name": "email",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": "required|email|unique:users,email|max:255",
+        "searchable": true
+    },
+    {
+        "name": "phone",
+        "dbType": "number,20",
+        "htmlType": "text",
+        "validations": "required|numeric|digits_between:8,20|unique:users,phone",
+        "searchable": true
+    },
+    {
+        "name": "is_active",
+        "dbType": "tinyInteger",
+        "htmlType": "",
+        "validations": "",
+        "searchable": true,
+        "inForm": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

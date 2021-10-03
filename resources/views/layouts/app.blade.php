@@ -95,7 +95,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © <a href="{{ url('home') }}">Oranpo</a>.</strong> All rights reserved.
+            <strong>Copyright © <a href="{{ url('home') }}"> @lang('auth.app.online') </a>.</strong> All rights reserved.
         </footer>
 
     </div>

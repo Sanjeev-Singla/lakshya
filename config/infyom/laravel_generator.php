@@ -67,11 +67,11 @@ return [
 
         'repository'        => 'App\Repositories',
 
-        'controller'        => 'App\Http\Controllers',
+        'controller'        => 'App\Http\Controllers\Admin',
 
         'api_controller'    => 'App\Http\Controllers\API',
 
-        'request'           => 'App\Http\Requests',
+        'request'           => 'App\Http\Requests\Admin',
 
         'api_request'       => 'App\Http\Requests\API',
 
@@ -150,7 +150,7 @@ return [
 
         'path' => '',
 
-        'view' => '',  // using backend will create return view('backend.?.index') type the backend views directory
+        'view' => 'admin',  // using backend will create return view('backend.?.index') type the backend views directory
 
         'public' => '',
     ],
